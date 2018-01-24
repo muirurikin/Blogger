@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    <!-- Page Header -->
+    header.masthead(style="background-image: url('/img/post-bg.jpg')")
+        div.container
+            div.row
+                div.col-lg-8.col-md-10.mx-auto
+                    div.site-heading
+                        h1 Blogger
+                        span.subheading Add Categories Below
+
+    div.container
+        div.row
+            div.col-lg-8.col-md-10.mx-auto
+                h2 Add Category
+                form(method="post", action="/posts/add", enctype="multipart/form-data")
+                    .form-group
+                        label Title:
+                        input.form-control(name="title", type="text")
+                    input.btn.btn-default(name="submit", type="submit", value="Add Category")
+    
+    <!-- Footer -->
+    footer
+        div.container
+            div.row
+                div.col-lg-8.col-md-10.mx-auto
+                    ul.list-inline.text-center
+                        li.list-inline-item
+                            a(href="#")
+                                span.fa-stack.fa-lg
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        li.list-inline-item
+                            a(href="#")
+                                span.fa-stack.fa-lg
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                        li.list-inline-item
+                            a(href="#")
+                                span.fa-stack.fa-lg
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-github.fa-stack-1x.fa-inverse
+                    p.copyright.text-muted Copyright &copy; Blogger 2018

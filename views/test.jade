@@ -1,0 +1,46 @@
+extends layout
+block content
+    <!-- Page Header -->
+    header.masthead(style="background-image: url('img/home-bg.jpg')")
+        div.container
+            div.row
+                div.col-lg-8.col-md-10.mx-auto
+                    div.site-heading
+                        h1 Clean Blog
+                        span.subheading A Blog Theme by Start Bootstrap
+    
+    <!-- Main Content -->
+    div.container
+        div.row
+            div.col-lg-8.col-md-10.mx-auto
+                div.post-preview
+                if posts
+                    each post, i in posts
+                        a(href="post.html" style="font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;")
+                            h2=post.title
+                        p.post-meta Posted by 
+                            a(style="font-size: 18px;font-style: italic;margin-top: 0;color: #777;") #{post.author} on #{post.date}
+                hr
+    
+    <!-- Footer -->
+    footer
+        div.container
+            div.row
+                div.col-lg-8.col-md-10.mx-auto
+                    ul.list-inline.text-center
+                        li.list-inline-item
+                            a(href="#")
+                                span.fa-stack.fa-lg
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        li.list-inline-item
+                            a(href="#")
+                                span.fa-stack.fa-lg
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                        li.list-inline-item
+                            a(href="#")
+                                span.fa-stack.fa-lg
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-github.fa-stack-1x.fa-inverse
+                    p.copyright.text-muted Copyright &copy; Blogger 2018

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ignore packages installed by npm 
 node_modules
 =======
+=======
+>>>>>>> 4c44ebc511db76da650a98042ac3ed1b4eec6604
 # Logs
 logs
 *.log
@@ -60,5 +63,8 @@ typings/
 
 # dotenv environment variables file
 .env
+<<<<<<< HEAD
+>>>>>>> 4c44ebc511db76da650a98042ac3ed1b4eec6604
+=======
 >>>>>>> 4c44ebc511db76da650a98042ac3ed1b4eec6604
 
