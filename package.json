@@ -21,7 +21,6 @@
     "moment": "*",
     "mongodb": "*",
     "monk": "*",
-    "morgan": "~1.5.1",
     "multer": "*"
   }
 }
